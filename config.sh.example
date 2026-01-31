@@ -1,0 +1,24 @@
+# --- DASHBOARD KONFIGURATION (MALL) ---
+# Kopiera denna fil till config.sh och fyll i dina uppgifter.
+
+# WordPress Uppgifter
+WP_USER="ditt_användarnamn"
+RAW_PASS="ditt_app_lösenord_här" # Skriv med mellanslag om det behövs
+WP_PASS=$(echo "$RAW_PASS" | tr -d ' ')
+
+# Sajter & Domäner
+SITE_XYZ="dindomän.xyz"
+SITE_BLOG="dindomän.blog"
+SITE_LINK="kortdomän.xyz"
+
+# GitHub & APIer
+GH_REPO="användarnamn/reponamn"
+RSS_URL="https://dindomän.xyz/feed/"
+API_URL="https://public-api.wordpress.com/rest/v1.1/sites/dindomän.blog"
+
+# Lokala Sökvägar
+A_PATH="/home/användare/Documents/Anteckningar/artiklar"
+
+# System (Rör ej om du inte vet vad du gör)
+ESC=$(printf '\033')
+NOW_SEC=$(date +%s)
